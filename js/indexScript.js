@@ -7,6 +7,7 @@ let screen = document.querySelector(".screen");
 let home = document.querySelector(".home");
 let navBar = document.querySelector(".navBar");
 let container = document.querySelector(".container");
+let linksMin = document.querySelector(".linksMin");
 
 inputSearch.addEventListener("click", (eI) => {
   if (links.getAttribute("linksVal") === "false") {
@@ -37,3 +38,13 @@ document.addEventListener("click", (eI) => {
     document.querySelector(".close").style.cssText = `display:none;`;
   }
 });
+
+function slider() {
+  if (linksMin.getAttribute("position") == "up") {
+    linksMin.style.cssText = `left: 0px;`;
+    linksMin.setAttribute("position", "dwon");
+  } else {
+    linksMin.style.cssText = `left: -100%;`;
+    linksMin.setAttribute("position", "up");
+  }
+}
