@@ -92,7 +92,7 @@ body {
 .screen {
   display: flex;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 80vh;
   align-items: center;
   margin: auto;
   padding: 20px;
