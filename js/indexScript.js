@@ -78,3 +78,13 @@ right.addEventListener("click", () => {
   }
   image.setAttribute("src", `${photos[count]}`);
 });
+
+function slider() {
+  if (linksMin.getAttribute("position") == "up") {
+    linksMin.style.cssText = `left: 0px;`;
+    linksMin.setAttribute("position", "dwon");
+  } else {
+    linksMin.style.cssText = `left: -100%;`;
+    linksMin.setAttribute("position", "up");
+  }
+}
