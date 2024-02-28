@@ -1,0 +1,11 @@
+.active {
+  background-color: var(--main-color);
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
